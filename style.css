@@ -1,0 +1,82 @@
+:root {
+  --purple: #3e0249;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--purple);
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 54px;
+  text-transform: uppercase;
+}
+
+.container {
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* styling the container */
+#game-board {
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* styling the box */
+.box {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--purple);
+  font-size: 150px;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--purple);
+  color: white;
+  border-color: var(--purple);
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+/* ========setting the borders=========== */
+.box:first-child,
+.box:nth-child(2),
+.box:nth-child(3) {
+  border-bottom: 3px solid var(--purple);
+}
+.box:nth-child(4),
+.box:nth-child(5),
+.box:nth-child(6) {
+  border-bottom: 3px solid var(--purple);
+}
+
+.box:first-child,
+.box:nth-child(4),
+.box:nth-child(7) {
+  border-right: 3px solid var(--purple);
+}
+.box:nth-child(2),
+.box:nth-child(5),
+.box:nth-child(8) {
+  border-right: 3px solid var(--purple);
+}
